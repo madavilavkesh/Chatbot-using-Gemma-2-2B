@@ -1,62 +1,69 @@
+Here's the **final updated version** of the `README.md` file with the Hugging Face token usage explained clearly in the **"How to Run"** section:
+
+---
+
 # GenAI Chatbot (google/gemma-2-2b-it)
 
 ## Project Overview
 
-This project is a **GenAI Chatbot** built using the **google/gemma-2-2b-it** language model from Google. The chatbot leverages the power of advanced natural language processing (NLP) to generate human-like responses to user input. The project includes a Gradio-based interface that allows users to interact with the chatbot easily in a conversational manner.
+This project is a **GenAI Chatbot** built using the **google/gemma-2-2b-it** language model from Google. The chatbot leverages the power of advanced natural language processing (NLP) to generate human-like responses to user input. It features a simple and interactive Gradio-based interface that allows users to chat seamlessly with the model.
 
-The chatbot utilizes the **google/gemma-2-2b-it model**, which is a large-scale language model fine-tuned for tasks like dialogue generation, content completion, and more. 
+## Model Used: google/gemma-2-2b-it
 
-## google/gemma-2-2b-it Model
+The **google/gemma-2-2b-it** model is a powerful instruction-tuned causal language model designed for high-quality natural language generation. It is suitable for tasks like dialogue, Q&A, and content completion.
 
-The **google/gemma-2-2b-it** model is a powerful causal language model trained on diverse text data. It can generate contextually relevant, coherent, and meaningful responses based on user input. This model is part of Google's Gemma model family, designed to provide high-quality natural language generation capabilities.
-
-You can find more about the model on the [Hugging Face page](https://huggingface.co/google/gemma-2-2b-it).
+🔗 [View on Hugging Face](https://huggingface.co/google/gemma-2-2b-it)
 
 ## Project Screenshots
 
 ### Interface
 
-Here’s how the chatbot interface looks:
-
 ![Screenshot_Interface](Screenshot_Interface.png)
 
 ### Chat Example
-
-Here’s an example of a conversation with the chatbot:
 
 ![Screenshot_Chats](Screenshot_Chats.png)
 
 ## How to Run the Application
 
-You can run this application in **Google Colab** using a GPU for fast inference.
+You can run this chatbot using **Google Colab with GPU** for best performance.
 
 ### Steps:
 
 1. **Download the notebook**:  
    Download the `Chatbot_using_Gemma_2_2B.ipynb` file from this repository.
 
-2. **Upload to Google Colab**:  
-   Open the notebook in **Google Colab** by navigating to [Google Colab](https://colab.research.google.com/), and upload the `.ipynb` file.
+2. **Open in Google Colab**:  
+   Go to [Google Colab](https://colab.research.google.com/), upload the notebook file, and open it.
 
-3. **Install dependencies**:  
-   The notebook installs the required dependencies like `gradio` and `transformers` using pip.
+3. **Replace with your Hugging Face token**:  
+   In the notebook, locate the line:
+   ```python
+   hf_token = "use your Huggingface token here"  # Replace with your Huggingface token
+   ```
+   Replace the token string with your own **Hugging Face access token**.  
+   You can get your token from: https://huggingface.co/settings/tokens
 
-4. **Run the cells**:  
-   Execute each cell in the notebook sequentially. The last step will launch the Gradio-based chatbot interface.
+4. **Install dependencies**:  
+   The notebook will install required Python packages such as `transformers` and `gradio`.
 
-5. **Access the app**:  
-   Once the app is running, you can interact with the chatbot in the provided Gradio interface.
+5. **Run all cells**:  
+   Execute each cell in sequence. The last cell will launch the chatbot interface.
+
+6. **Start chatting**:  
+   After launching, you can chat with the model through the interactive Gradio interface.
 
 ### Requirements
 
-- **Google Colab** or a similar Jupyter notebook environment.
-- A **GPU** (optional, but recommended for faster processing).
-- **Hugging Face Token**: Make sure to replace the token in the code with your own Hugging Face token.
+- **Google Colab** or a local Jupyter environment
+- **Python ≥ 3.8**
+- **GPU (recommended)** for faster inference
+- **Hugging Face Token** for authenticated model loading
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Now the README reflects the correct model name. Let me know if you need further adjustments!
+Let me know if you want a badge section, Hugging Face model card embed, or an auto-run Colab link too!
