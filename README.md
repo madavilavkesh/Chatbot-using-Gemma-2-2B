@@ -1,7 +1,3 @@
-Here's the **final updated version** of the `README.md` file with the Hugging Face token usage explained clearly in the **"How to Run"** section:
-
----
-
 # GenAI Chatbot (google/gemma-2-2b-it)
 
 ## Project Overview
